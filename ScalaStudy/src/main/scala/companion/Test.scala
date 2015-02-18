@@ -3,7 +3,7 @@ import scala.collection.mutable.ArrayBuffer
 package companion {
   object Test {
     def main(args: Array[String]): Unit = {
-      println("test")
+      println("test") 
 
       var myIntArray = new Array[Int](10);
       var myStringArrya = new Array[String](10)
@@ -23,6 +23,9 @@ package companion {
       dynamicArray.addString(b)
       val arr =dynamicArray.toArray;
       
+      var mylist = List(("a","b"),("a1","b1"))
+      var c = mylist.toMap
+      println(c)
     }
   }
 }
