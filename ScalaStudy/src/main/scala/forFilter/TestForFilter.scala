@@ -4,9 +4,9 @@ import scala.collection.mutable.ArrayBuffer
 
 object TestForFilter {
   def main(args: Array[String]): Unit = {
-    println("test for filter")
+    println("test for filter111")
     val a1 = for (i <- 0 to 10) yield i
-    val a2 = a1.filter { x => x % 2 == 0 }.map { x => x * 2 }
+    val a2 = a1.filter { x => x % 2 == 0}.map { x => x * 2}
     println(a2)
 
     val b = new ArrayBuffer[Int]
@@ -23,7 +23,10 @@ object TestForFilter {
     multiArgs2(1, 2, 3, 4)
   }
 
-  def multiArgs(x: Int*) = { x.foreach { x => println(2 * x) } }
+  def multiArgs(x: Int*) = {
+    x.foreach { x => println(2 * x)}
+  }
+
   def multiArgs2(x: Int*) = {
     val it = x.iterator
     while (it.hasNext)
